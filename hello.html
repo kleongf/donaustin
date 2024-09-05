@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don Austin AdBlock</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+        }
+        .slider-container {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Don Austin Adblock</h1>
+        <div class="don-img">
+            <img src="donAustin.jpeg"/>
+        </div>
+        <div class="slider-container">
+            <label for="slider">% of ads removed:</label>
+            <input type="range" id="slider" min="0" max="100" step="1">
+            <span id="sliderValue">50</span>
+        </div>
+        <button id="saveButton">Save</button>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

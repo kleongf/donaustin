@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Don Austin Adblock",
+    "description": "Don Austin Adblock replaces a percentage of images on a website with the handsome Don Austin.",
+    "version": "1.0",
+    "action": {
+      "default_popup": "hello.html",
+      "default_icon": "extension_image.png"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [{
+      "matches": ["<all_urls>"],
+      "all_frames": true,
+      "js":      ["contentScript.js"]
+    }]
+  }
